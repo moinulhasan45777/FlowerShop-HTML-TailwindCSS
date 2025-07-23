@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/style.css" />
     <title>Faugei - Flower Shop</title>
   </head>
-  <body class="inter-font">
-    <header class="mt-[0.8125rem] md:mt-[1.875rem] mx-4 md:mx-[9.375rem]">
+  <body class="inter-font mx-4 md:mx-[9.375rem]">
+    <header class="mt-[0.8125rem] md:mt-[1.875rem]">
       <nav class="flex items-center justify-between mb-7 md:mb-30">
-        <img src="assets/logo.png" alt="Faugei Logo" class="h-[2.375rem] md:h-[5.125rem] w-[3.9375rem] md:w-[8.4375rem]" />
+        <img src="assets/logo.png" alt="Faugei Logo" class="h-[2.375rem] md:h-[5.125rem] min-w-[3.9375rem]" />
         <ul class="flex gap-12">
           <li class="hidden md:block font-bold text-[#252432]"><a href="#">Home</a></li>
           <li class="hidden md:block text-[#8987A1]"><a href="#">Shop</a></li>
@@ -26,19 +29,133 @@
           </li>
         </ul>
       </nav>
-      <div id="banner-section" class="md:h-[28.8125rem] flex gap-7 md:gap-0 flex-col-reverse md:flex-row items-center md:items-end mx-[-1rem] md:mx-0 mb-[4.0625rem] md:mb-30">
+      <div
+        id="banner-section"
+        class="md:h-[28.8125rem] flex gap-7 md:gap-0 flex-col-reverse md:flex-row items-center md:items-end mx-[-1rem] md:mx-0 mb-[4.0625rem] md:mb-30"
+      >
         <div class="mx-4 md:mx-0">
-          <h1 class="font-[noto-serif] text-6 md:text-[4.0625rem] font-bold mb-[0.8125rem] leading-20">
+          <h1 class="font-[noto-serif] text-2xl md:text-[4.0625rem] font-bold mb-[0.8125rem] md:leading-20">
             ALWAYS <span class="text-[#E95A08]">FRESH<br />FLOWERS</span>
           </h1>
           <p class="text-[0.875rem] md:text-[1.375rem] text-[rgba(0,0,0,0.5)]">
-            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety
+            of fresh flowers that are perfect for any occasion.
           </p>
         </div>
         <img src="assets/hero-flower.png" alt="Flowers" />
       </div>
     </header>
-    <main></main>
+    <main>
+      <section id="plants-section" class="text-center mb-[2.625rem] md:mb-[13.125rem]">
+        <div class="mx-[-1rem] md:mx-0">
+          <h2 class="font-[noto-serif] font-bold text-2xl md:text-[3.125rem] mb-4"><span class="text-[#E95A08]">Our</span> Plants</h2>
+          <p
+            class="text-sm md:text-[1.375rem] text-[rgba(0,0,0,0.5)] mb-7 md:mb-[3.0625rem] min-w-84 max-w-[55.5rem] mx-auto px-[1.78125rem] md:px-0"
+          >
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety
+            of fresh.
+          </p>
+        </div>
+        <div id="cards-container" class="grid grid-cols-2 md:grid-cols-4 gap-x-[1.25rem] gap-y-[1.875rem]">
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/sample-flower-image.png" alt="Flower For Sale" class="mb-[1.875rem] w-full" />
+            <div>
+              <h3 class="mb-[0.625rem] md:mb-[1.25rem] leading-0 text-base md:text-[1.375rem] font-medium">Lily Blossom</h3>
+              <h3 class="text-base md:text-[1.375rem] font-bold mb-[1.875rem]">20 USD</h3>
+              <button
+                class="bg-[#E95A08] text-white py-[1rem] w-full text-base font-semibold hover:cursor-pointer hover:bg-[#5b2f16] transition duration-300 ease-in-out"
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
